@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300;400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // outline: 1px solid blue;
+}
+input,
+a button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.map {
+    background-image: url(../img/img-location/map-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 600px;
+    width: 100%;
+    .information {
+        display: flex;
+        flex-direction: column;
+        button {
+            width: 208px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            .arrow {
+                padding: 22px 20px;
+                background-color: #151515;
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(0.95);
+                    background-color: #d5966c;
+                }
+            }
+            .text {
+                font-family: Big Shoulders Display;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: 0.18em;
+                color: white;
+                text-transform: uppercase;
+                padding: 24px 7px;
+                background-color: #d5966c;
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(0.95);
+                    background-color: #151515;
+                }
+            }
+        }
+        .center {
+            margin-top: 150px;
+            margin-bottom: 200px;
+            align-self: center;
+        }
+    }
+}
+.promo {
+    width: 100%;
+    background-color: #151515;
+    .location {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+        .loc-left {
+            h1 {
+                max-width: 350px;
+                font-family: Big Shoulders Display;
+                font-weight: 900;
+                font-size: 70px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+        .loc-right {
+            display: flex;
+            flex-direction: column;
+            max-width: 540px;
+            h2 {
+                font-family: Big Shoulders Display;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #d5966c;
+            }
+            p {
+                margin-top: 20px;
+                max-width: 445px;
+                font-family: Outfit;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 145%;
+                color: white;
+            }
+            .sec {
+                max-width: 540px;
+            }
+        }
+    }
+}
+.footer-background {
+    width: 100%;
+    background-color: #d5966c;
+    .footer {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        p {
+            font-family: Outfit;
+            width: 430px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 156%;
+            color: #151515;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 20px;
+            .card {
+                cursor: pointer;
+                background-color: transparent;
+                transition: 0.5s;
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .promo {
+        .location {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        p {
+            max-width: 311px;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 0;
+        }
+    }
+}
