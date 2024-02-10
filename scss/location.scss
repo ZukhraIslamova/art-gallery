@@ -142,6 +142,12 @@ a {
     }
 }
 @media (max-width: 700px) {
+    .container{
+        max-width: 700px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
     .promo {
         .location {
             display: flex;
