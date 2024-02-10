@@ -35,6 +35,9 @@ a {
   background-color: #151515;
   height: 800px;
 }
+.promo .promo-mobile {
+  display: none;
+}
 .promo .promo-content {
   padding-top: 180px;
   display: flex;
@@ -86,7 +89,6 @@ a {
   transition: 0.5s;
 }
 .promo .promo-content .some-text button .text:hover {
-  transform: scale(0.95);
   background-color: #d5966c;
 }
 .promo .promo-content .some-text button .arrow {
@@ -95,7 +97,6 @@ a {
   transition: 0.5s;
 }
 .promo .promo-content .some-text button .arrow:hover {
-  transform: scale(0.95);
   background-color: #151515;
 }
 
@@ -132,13 +133,41 @@ a {
   line-height: 145%;
   color: #444;
 }
+.about .about-top .top-img-desktop {
+  display: block;
+}
+.about .about-top .top-img-tablet {
+  display: none;
+}
+.about .about-top .top-img-mobile {
+  display: none;
+}
 .about .about-bottom {
   display: flex;
+  justify-content: space-between;
+}
+.about .about-bottom .about-bottom-left .about-bottom-left-desktop {
+  display: block;
+}
+.about .about-bottom .about-bottom-left .about-bottom-left-tablet {
+  display: none;
+}
+.about .about-bottom .about-bottom-left .about-bottom-left-mobile {
+  display: none;
 }
 .about .about-bottom .about-bottom-right {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+.about .about-bottom .about-bottom-right .about-bottom-right-desktop {
+  display: block;
+}
+.about .about-bottom .about-bottom-right .about-bottom-right-tablet {
+  display: none;
+}
+.about .about-bottom .about-bottom-right .about-bottom-right-mobile {
+  display: none;
 }
 .about .about-bottom .about-bottom-right .data {
   padding: 70px 50px;
@@ -193,4 +222,132 @@ a {
 }
 .footer-background .footer .icons .card:hover {
   background-color: #d5966c;
+}
+
+@media (max-width: 1110px) {
+  .promo {
+    width: 100%;
+    background-image: url(../img/img/promo-backgroun-tablet.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    height: 700px;
+  }
+  .promo .promo-mobile {
+    display: none;
+  }
+  .promo .promo-content {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .promo .promo-content .title {
+    max-width: 339px;
+  }
+  .promo .promo-content .title h1 {
+    color: #151515;
+  }
+  .about {
+    margin-bottom: 100px;
+  }
+  .about .about-top {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .about-top .top-img-desktop {
+    display: none;
+  }
+  .about .about-top .top-img-tablet {
+    display: block;
+  }
+  .about .about-top .top-img-mobile {
+    display: none;
+  }
+  .about .about-bottom {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about .about-bottom .about-bottom-left .about-bottom-left-desktop {
+    display: none;
+  }
+  .about .about-bottom .about-bottom-left .about-bottom-left-tablet {
+    display: block;
+  }
+  .about .about-bottom .about-bottom-left .about-bottom-left-mobile {
+    display: none;
+  }
+  .about .about-bottom .about-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .about .about-bottom .about-bottom-right .about-bottom-right-desktop {
+    display: none;
+  }
+  .about .about-bottom .about-bottom-right .about-bottom-right-tablet {
+    display: block;
+  }
+  .about .about-bottom .about-bottom-right .about-bottom-right-mobile {
+    display: none;
+  }
+  .about .about-bottom .about-bottom-right .data {
+    max-width: 280px;
+    padding: 35px 20px;
+  }
+  .about .about-bottom .about-bottom-right .data h3 {
+    font-size: 60px;
+    line-height: 100%;
+  }
+  .about .about-bottom .about-bottom-right .data p {
+    max-width: 223px;
+    font-size: 22px;
+    line-height: 145%;
+  }
+  .footer-background .footer p {
+    max-width: 281px;
+  }
+}
+@media (max-width: 600px) {
+  .promo {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo .promo-mobile {
+    display: block;
+  }
+  .promo .promo-content {
+    padding: 0;
+  }
+  .promo .promo-content h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 92%;
+  }
+  .about {
+    margin-top: 100;
+  }
+  .about .about-top {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .about .about-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 30px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
